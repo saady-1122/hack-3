@@ -42,7 +42,16 @@ int main(int argc, char *argv[]){
           return 0;
     }      
 
+   /*
+   OUTPUT:
    
+PS E:\labwrk\hack3\hack-3> .\a.exe 20 15 5
+15 days used, 15 days remaining
+Average daily use: 0.333 GB/day
+You are under your average daily use (1.000 GB/day).
+You can use up to 1.000 GB/day and stay below your data plan limit.
+   
+   */
 
   
 
