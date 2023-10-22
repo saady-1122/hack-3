@@ -26,7 +26,38 @@ int main(int argc, char *argv[]){
 
       printf("%d days used, %d days remaining\n", current_day, remaining_days);
       printf("Average daily use: %.3f GB/day\n", average_daily_use);
-      
+
+      if (average_daily_use > allowed_daily_use) {
+           printf("You are EXCEEDING your average daily use (%.3f GB/day).\n", allowed_daily_use);
+           printf("Continuing this high usage, you'll exceed your data plan by %.1f GB.\n", (average_daily_use - allowed_daily_use) * remaining_days);
+            printf("To stay below your data plan, use no more than %.3f GB/day.\n", allowed_daily_use);
+            } else if (average_daily_use == allowed_daily_use) {
+             printf("You are at your average daily use limit (%.3f GB/day).\n", average_daily_use);
+             printf("You can use up to %.3f GB/day and stay below your data plan limit.\n", allowed_daily_use);
+            } else { 
+            printf("You are under your average daily use (%.3f GB/day).\n", allowed_daily_use);
+            printf("You can use up to %.3f GB/day and stay below your data plan limit.\n", allowed_daily_use);
+
+          }
+          return 0;
+    }      
+
+   
+
+  
+
+
+
+
+
+
+
+ 
+         
+
+
+
+
 
 
 
